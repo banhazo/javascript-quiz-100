@@ -79,8 +79,23 @@ console.log(result);
 */
 const input = 5;
 
+// 방법1
 for (let i = 1; i <= input; i++) {
   const spaces = ' '.repeat(input - i);
   const stars = '*'.repeat(2 * i - 1);
   console.log(spaces + stars);
 }
+
+// 방법2
+let output = '';
+for (let i = 1; i <= input; i++) {
+  let floor = '';
+  for (let j = 1; j <= input - i; j++) {
+    floor += ' ';
+  }
+  for (let k = 1; k <= 2 * i - 1; k++) {
+    floor += '*';
+  }
+  output += floor + '\n';
+}
+console.log(output);

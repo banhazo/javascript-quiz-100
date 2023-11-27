@@ -1,9 +1,20 @@
 /* 문제1: 배열의 삭제
 다음 배열에서 400,500를 삭제하는 code를 입력하세요.
 */
-var nums = [100, 200, 300, 400, 500];
-nums.pop(nums.pop());
-console.log(nums);
+
+// 방법1
+var nums1 = [100, 200, 300, 400, 500];
+nums1.pop(nums1.pop());
+console.log('nums1:', nums1);
+
+// 방법2
+var nums2 = [100, 200, 300, 400, 500];
+nums2.splice(3, 2);
+console.log('nums2:', nums2);
+// 방법3
+var nums3 = [100, 200, 300, 400, 500];
+nums3.length = 3;
+console.log('nums3:', nums3);
 
 /* 문제2: 배열의 내장함수
 <pass>부분에 배열 내장함수를 이용하여 코드를 입력하고 다음과 같이 출력되게 하세요.
