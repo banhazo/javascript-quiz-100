@@ -56,5 +56,4 @@ if (input_14 % 3 === 0) {
 
 // 15
 const input_15 = '김다정';
-
 console.log(`안녕하세요. 저는 ${input_15}입니다.`);
