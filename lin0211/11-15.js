@@ -70,4 +70,5 @@ console.log("30 - ", checkMultiples3(30)); //짝
 function makeGreeting(name) {
   console.log(`안녕하세요. 저는 ${name}입니다.`);
 }
+
 makeGreeting("김다정");
