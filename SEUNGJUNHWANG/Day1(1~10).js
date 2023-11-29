@@ -88,7 +88,7 @@ console.log(a + b); // 16
 // 4)  _age
 // 5)  1age
 
-// 정답 : 4, 5
+// 정답 : 3, 5
 
 // 문제 8
 
@@ -110,6 +110,8 @@ console.log(d["weight"]);
 // 문제 9
 
 // 다음 소스 코드를 완성하여 날짜와 시간을 출력하시오.
+// 출력
+// 2019/04/26 11:34:27
 
 let year = "2019";
 let month = "04";
@@ -118,7 +120,34 @@ let hour = "11";
 let minute = "34";
 let second = "27";
 
-let result = console.log(result); //빈칸을 채워주세요
+// 정답:
+let result = year.concat(
+  "/",
+  month,
+  "/",
+  day,
+  " ",
+  hour,
+  ":",
+  minute,
+  ":",
+  second
+);
+
+console.log(result);
+
+
+
+// 문제 10
+
+// 입력
+// 5
 
 // 출력
-// 2019/04/26 11:34:27
+//     *
+//    ***
+//   *****
+//  *******
+// *********
+
+
