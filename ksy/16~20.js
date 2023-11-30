@@ -49,3 +49,22 @@ const div = (nums) => {
 };
 
 console.log(div('10 2'));
+
+// 16
+let str = '문자열 거꾸로 뽑기';
+
+let result = str.split('');
+
+result = result.reverse();
+
+result = result.join('');
+
+let result = str.split('').reverse().join('');
+
+// let result = [];
+
+// for (let i = 0; i < str.length; i++) {
+//   result.push(str[i]);
+// }
+
+// console.log(result);
