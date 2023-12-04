@@ -33,8 +33,8 @@
 출력 : MARY
 */
 // const inputName = prompt('이름을 입력해주세요.', 'mary');
-const inputName = 'mary';
-console.log(inputName.toUpperCase());
+const upperString = (name) => name.toUpperCase();
+console.log(upperString('mary'));
 
 /* 문제25: 원의 넓이를 구하세요
 원의 넓이는 `반지름의 길이 x 반지름의 길이 x 3.14`로 구할 수 있습니다.
@@ -42,5 +42,5 @@ console.log(inputName.toUpperCase());
 입력으로 반지름의 길이 정수 n이 주어지면 원의 넓이를 반환하는 함수를 만들어 주세요.
 */
 // const inputRadius = prompt('반지름의 길이를 입력해주세요.', 3);
-const inputRadius = 3;
-console.log(inputRadius * inputRadius * 3.14);
+const calcCircleArea = (radius) => radius * radius * 3.14;
+console.log(calcCircleArea(3));
