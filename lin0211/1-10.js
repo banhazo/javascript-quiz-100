@@ -121,7 +121,6 @@ console.log(result);
 // *********
 
 function makeTree(num) {
-  console.log(num);
   for (let i = num, j = 1; i > 0; i--, j += 2) {
     console.log(" ".repeat(i), "*".repeat(j));
   }
