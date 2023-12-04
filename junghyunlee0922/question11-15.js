@@ -93,6 +93,6 @@ let i = 0;
 
 let name = prompt("너 누구냐?");
 
-if (name === 김다정) {
-  console.log("안녕하세요. ${name}입니다.");
+if (name === "김다정") {
+  console.log(`안녕하세요. ${name}입니다.`);
 }
