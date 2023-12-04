@@ -3,9 +3,18 @@
 입력 : 거꾸로
 출력 : 로꾸거
 */
-// const inputStr = prompt('문장을 입력해주세요.', '거꾸로')
+// 방법1
+const inputStr = '거꾸로';
 const reverseString = (inputStr) => [...inputStr].reverse().join('');
-console.log(reverseString('거꾸로'));
+console.log(reverseString(inputStr));
+
+// 방법2
+const reverseStringFor = (inputStr) => {
+  let result = '';
+  for (let char of inputStr) result = char + result;
+  return result;
+};
+console.log(reverseStringFor(inputStr));
 
 /* 문제17: 놀이기구 키 제한
 유주는 놀이공원 아르바이트 중입니다.
@@ -13,9 +22,9 @@ console.log(reverseString('거꾸로'));
 유주가 담당하는 놀이기구는 키가 150cm 이상만 탈 수 있습니다.
 입력으로 키가 주어지면 키가 150이 넘으면 YES를 틀리면 NO를 출력하는 프로그램을 작성하세요.
 */
-// const inputHeight = prompt('키를 입력해주세요.', 150)
+const inputHeight = 150;
 const limitHeight = (inputHeight) => (inputHeight >= 150 ? 'YES' : 'NO');
-console.log(limitHeight(150));
+console.log(limitHeight(inputHeight));
 
 /* 문제18: 평균 점수
 영하네 반은 국어, 수학, 영어 시험을 보았습니다. 
@@ -37,6 +46,7 @@ console.log(getAvg('20 30 40'));
 const calcPow = (numberList) => {
   const [a, b] = numberList.split(' ').map(Number);
   return a ** b;
+  // return Math.pow(a,b)
 };
 console.log(calcPow('2 10'));
 
