@@ -39,7 +39,6 @@ let minute = '34';
 let second = '27';
 
 let result = year.concat(
-  year,
   '/',
   month,
   '/',
