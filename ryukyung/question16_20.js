@@ -3,9 +3,18 @@
 입력 : 거꾸로
 출력 : 로꾸거
 */
-// const inputStr = prompt('문장을 입력해주세요.', '거꾸로')
+// 방법1
 const inputStr = '거꾸로';
-console.log([...inputStr].reverse().join(''));
+const reverseString = (inputStr) => [...inputStr].reverse().join('');
+console.log(reverseString(inputStr));
+
+// 방법2
+const reverseStringFor = (inputStr) => {
+  let result = '';
+  for (let char of inputStr) result = char + result;
+  return result;
+};
+console.log(reverseStringFor(inputStr));
 
 /* 문제17: 놀이기구 키 제한
 유주는 놀이공원 아르바이트 중입니다.
@@ -13,9 +22,9 @@ console.log([...inputStr].reverse().join(''));
 유주가 담당하는 놀이기구는 키가 150cm 이상만 탈 수 있습니다.
 입력으로 키가 주어지면 키가 150이 넘으면 YES를 틀리면 NO를 출력하는 프로그램을 작성하세요.
 */
-// const inputHeight = prompt('키를 입력해주세요.', 150)
 const inputHeight = 150;
-console.log(inputHeight >= 150 ? 'YES' : 'NO');
+const limitHeight = (inputHeight) => (inputHeight >= 150 ? 'YES' : 'NO');
+console.log(limitHeight(inputHeight));
 
 /* 문제18: 평균 점수
 영하네 반은 국어, 수학, 영어 시험을 보았습니다. 
@@ -24,18 +33,22 @@ console.log(inputHeight >= 150 ? 'YES' : 'NO');
 단, 소숫점 자리는 모두 버립니다.
 */
 // const [korean, math, english] = prompt('국어, 수학, 영어 점수를 공백으로 구분하여 입력해주세요.', '20 30 40').split(' ').map(Number);
-const [korean, math, english] = '20 30 40'.split(' ').map(Number);
-console.log(korean, math, english);
-const totalAvgScore = (korean + math + english) / 3;
-console.log(Math.floor(totalAvgScore));
+let getAvg = (score) => {
+  const [korean, math, english] = score.split(' ').map(Number);
+  const totalAvgScore = (korean + math + english) / 3;
+  return Math.floor(totalAvgScore);
+};
+console.log(getAvg('20 30 40'));
 
 /* 문제19: 제곱을 구하자
 공백으로 구분하여 두 숫자 a와 b가 주어지면, a의 b승을 구하는 프로그램을 작성하세요.
 */
-// const [a,b] = prompt('2개의 숫자를 공백으로 구분하여 입력해주세요.', '2 10').split(' ').map(Number)
-const [a, b] = '2 10'.split(' ').map(Number);
-console.log(a ** b);
-console.log(Math.pow(a, b));
+const calcPow = (numberList) => {
+  const [a, b] = numberList.split(' ').map(Number);
+  return a ** b;
+  // return Math.pow(a,b)
+};
+console.log(calcPow('2 10'));
 
 /* 문제20: 몫과 나머지
 공백으로 구분하여 두 숫자가 주어집니다.
