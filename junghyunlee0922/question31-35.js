@@ -60,15 +60,26 @@ result = result.join("");
 
 // - 정답 -
 
-// const height = prompt("너의 키를 말해보아라").split(' ');
+// const height1 = "176 156 155 165 166 169";
+// const height2 = "155 156 165 166 169 176";
 
-// const sr = height.sort();
+const height1 = prompt("너의 키를 말하거라!");
 
-// if (sr.toString()) {
-//   alert("YES");
-// } else {
-//   alert("NO");
-// }
+function isSort() {
+  let arr = height1.split(" ");
+  let result = "";
+  for (let i = 0; i < arr.length - 1; i++) {
+    if (arr[i] <= arr[i + 1]) {
+      result = "yes";
+    } else {
+      result = "no";
+      break;
+    }
+  }
+  return result;
+}
+
+console.log(isSort(height1));
 
 /* ------------------------- 문제35 : Factory 함수 사용하기 ------------------------- */
 /*2제곱, 3제곱, 4제곱을 할 수 있는 Factory 함수를 만들려고 합니다. 
