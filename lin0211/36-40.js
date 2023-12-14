@@ -12,7 +12,7 @@
 function timesTable(num) {
   return Array(9)
     .fill(1)
-    .map((a, i) => num * (i + 1))
+    .map((_, i) => num * (i + 1))
     .join(" ");
 }
 
