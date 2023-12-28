@@ -47,8 +47,8 @@ reverseNumberList('2 4 6 7 8'); // 8 7 6 4 2
 출력 : YES
 */
 const isSort = (heightList) => {
-  unSorted = heightList.split(' ').join(' ');
-  sorted = heightList
+  const unSorted = heightList.split(' ').join(' ');
+  const sorted = heightList
     .split(' ')
     .sort((a, b) => a - b)
     .join(' ');
