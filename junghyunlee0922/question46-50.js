@@ -109,21 +109,21 @@ https://img.scoop.it/omRChIeVtQY1Nodjul8eODl72eJkfbmt4t8yenImKBVvK0kTmF0xjctABna
 아래 코드의 빈 칸을 채워 버블 정렬을 완성해 봅시다.
 */
 
-// function bubble(arr) {
-//   let result = arr.slice();
+/*function bubble(arr) {
+  let result = arr.slice(); 
 
-//   for (let i = 0; i < result.length - 1; i++) {
-//     for (/*빈칸을 채워주세요.*/) {
-//       if (result[j] > result[j + 1]) {
-//          //빈칸을 채워주세요.
-//       }
-//     }
-//   }
-//   return result;
-// }
+  for (let i = 0; i < result.length - 1; i++) {
+    for (/~빈칸을 채워주세요.~/) {
+      if (result[j] > result[j + 1]) {
+         //빈칸을 채워주세요.
+      }
+    }
+  }
+  return result;
+}
 
-// const items = prompt('입력해주세요.').split(' ').map((n) => {
-//   return parseInt(n, 10);
-// });
+const items = prompt('입력해주세요.').split(' ').map((n) => {
+  return parseInt(n, 10);
+});
 
-// console.log(bubble(items));
+console.log(bubble(items));*/
